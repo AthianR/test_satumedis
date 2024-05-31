@@ -13,7 +13,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $dokter = Dokter::paginate(2);
+        $dokter = Dokter::paginate(10);
         return view('home',compact('dokter'));
     }
 }
